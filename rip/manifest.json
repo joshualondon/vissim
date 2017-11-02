@@ -1,0 +1,29 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "icon16.png",
+      "default_popup": "popup.html",
+      "default_title": "NoCoffee vision simulator"
+   },
+   "content_scripts": [ {
+      "js": [ "contentscript.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_start"
+   } ],
+   "description": "NoCoffee vision simulator",
+   "homepage_url": "http://accessgarage.wordpress.com/2013/02/09/458/",
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png",
+      "48": "icon48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCzKSmSnIVshWeZQtqqbVLfvu15VLAK5+pwd0iLBQinUB8gLvsKv4T9X4NKiMiShrBR7tfiztJVm9UoXTK275m+fWVGBPS/qdo4yBXAlSdxOQYokVAke421y/dhZ0k2w9XANAa19KMAWnFgcoGj0mbjD80b+fD7ehYORITPIRH0GwIDAQAB",
+   "manifest_version": 2,
+   "name": "NoCoffee",
+   "permissions": [ "tabs", "\u003Call_urls>" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.4.9",
+   "web_accessible_resources": [ "overlays/cataracts.png", "overlays/diabetic-retinopathy.png", "overlays/retinal-detachment.png", "overlays/floater-1.png", "overlays/floater-2.png", "overlays/floater-3.png", "overlays/floater-4.png", "overlays/floater-5.png", "overlays/floater-6.png", "overlays/floater-7.png", "overlays/floater-8.png", "overlays/floater-9.png", "overlays/floater-10.png", "overlays/floater-11.png", "overlays/floater-12.png", "overlays/floater-13.png", "overlays/floater-14.png", "overlays/floater-15.png" ]
+}
